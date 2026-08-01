@@ -50,14 +50,14 @@ cursor:pointer;background:linear-gradient(90deg,#ffd166,#ff7b54);color:#40102c}
     <div id="sub">Swap two side-by-side fruits to line up 3 or more and bottle the juice. Fill 10 bottles before the 60 second shift ends.</div>
     <div id="stats"></div>
     <button id="go">START THE SHIFT</button>
-    <div class="tiny">tap two neighbours or drag one onto the other &middot; M mutes</div>
+    <div class="tiny">tap two neighbours or drag one onto the other &middot;</div>
   </div>
 </div>
 <script>
 (function(){
 var REWARD="Show this screen for $2 off any 16oz";
 var FR=[["🍓","#ff4d6d"],["🍊","#ff8a1f"],["🍋","#f2d413"],["🥝","#5cc63f"],["🍇","#a25cff"],["🥥","#c98a5b"]];
-var N=7,S=560,PAD=10,CELL=(S-2*PAD)/N,TARGET=1000,ROUND=60,PER=20;
+var N=7,S=560,PAD=10,CELL=(S-2*PAD)/N,TARGET=1500,ROUND=60,PER=20;
 var cv=document.getElementById("cv"),cx=cv.getContext("2d");
 var elT=document.getElementById("time"),elS=document.getElementById("score"),elB=document.getElementById("bot"),elF=document.getElementById("fill");
 var scr=document.getElementById("screen"),ttl=document.getElementById("ttl"),sub=document.getElementById("sub"),
