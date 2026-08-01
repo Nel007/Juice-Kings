@@ -311,7 +311,7 @@ cx.lineTo(x+w,y+h-rad);cx.quadraticCurveTo(x+w,y+h,x+w-rad,y+h);
 cx.lineTo(x+rad,y+h);cx.quadraticCurveTo(x,y+h,x,y+h-rad);
 cx.lineTo(x,y+rad);cx.quadraticCurveTo(x,y,x+rad,y);cx.closePath();
 }
-function tile(function tile(x,y,t,sc,al,on){
+function tile(x,y,t,sc,al,on){
 if(t<0||sc<=0)return;
 var f=FR[t],w=(CELL-8)*sc;
 cx.save();cx.globalAlpha=Math.max(0,Math.min(1,al));cx.translate(x,y);
@@ -330,7 +330,6 @@ cx.shadowColor="rgba(0,0,0,.65)";cx.shadowBlur=w*.16;cx.shadowOffsetY=w*.035;
 cx.fillText(f[0],0,w*.03);
 cx.shadowBlur=0;cx.shadowOffsetY=0;
 cx.restore();
-}
 }
 function px(c){return PAD+c*CELL+CELL/2;}
 function py(r,c){return PAD+r*CELL+CELL/2+off[r][c];}
